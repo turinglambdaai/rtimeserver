@@ -1,7 +1,28 @@
-.DS_Store
+# Racket compiled bytecode
 compiled/
-/doc/
+*.zo
+*.dep
+
+# IDE / Editor
+.DS_Store
 *~
 *.bak
 \#*
 .\#*
+.vscode/
+.idea/
+
+# OS generated
+Thumbs.db
+Desktop.ini
+
+# Build artifacts
+doc/
+dist/
+
+# Test artifacts
+*.coverage
+
+# User config (local overrides)
+rtimeserver.config
+*.local
