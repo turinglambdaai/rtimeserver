@@ -1,17 +1,18 @@
-# rtimeserver
-
-[![Language](https://img.shields.io/badge/language-Racket-red)] [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)  [![English](https://img.shields.io/badge/lang-English-blue)](README.md) [![中文](https://img.shields.io/badge/lang-中文-red)](README.zh-CN.md)
-
+# rTimeServer
 
 A cross-platform gPTP (IEEE 802.1AS) debugging tool built with [Racket](https://racket-lang.org/). It provides a GUI for configuring PTP parameters, monitoring time synchronization status, capturing and analyzing PTP packets, and viewing runtime logs with sync accuracy statistics.
 
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
+**English** · [中文](README.zh-CN.md)
+
 ## Features
 
-- **Parameter Configuration** -- transport mode (IEEE 802.3 / UDP IPv4), profile (gPTP / PTPv2), domain number, Announce/Sync intervals
-- **Sync Monitoring** -- real-time Master-Slave sync status, clock offset, path delay, neighbor rate ratio
-- **Packet Analysis** -- capture and parse PTP packets (Sync, Follow_Up, Announce, PDelay, Signalling) with per-field display
-- **Logs & Statistics** -- runtime logging, sliding-window sync accuracy statistics (mean / min / max / stddev)
-- **Bilingual UI** -- Chinese and English interface
+- **Parameter Configuration** — transport mode (IEEE 802.3 / UDP IPv4), profile (gPTP / PTPv2), domain number, Announce/Sync intervals
+- **Sync Monitoring** — real-time Master-Slave sync status, clock offset, path delay, neighbor rate ratio
+- **Packet Analysis** — capture and parse PTP packets (Sync, Follow_Up, Announce, PDelay, Signalling) with per-field display
+- **Logs & Statistics** — runtime logging, sliding-window sync accuracy statistics (mean / min / max / stddev)
+- **Bilingual UI** — Chinese and English interface
 
 ## Architecture
 
@@ -91,7 +92,7 @@ rtimeserver/
 ### Run
 
 ```bash
-git clone https://github.com/jrtxio/rtimeserver.git
+git clone https://github.com/turinglambdaai/rtimeserver.git
 cd rtimeserver
 racket main.rkt
 ```

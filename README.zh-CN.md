@@ -1,16 +1,18 @@
-# rtimeserver
-
-[English](README.md) | [中文](README.zh-CN.md)
+# rTimeServer
 
 基于 [Racket](https://racket-lang.org/) 开发的跨平台 gPTP (IEEE 802.1AS) 调试工具。提供图形化界面，用于配置 PTP 参数、监控时间同步状态、抓取和分析 PTP 报文，以及查看运行日志与同步精度统计。
 
+![Racket](https://img.shields.io/badge/Racket-9F1D20?logo=racket&logoColor=white) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
+[English](README.md) · **中文**
+
 ## 功能特性
 
-- **参数配置** -- 传输模式（IEEE 802.3 / UDP IPv4）、Profile（gPTP / PTPv2）、Domain 编号、Announce/Sync 发送周期
-- **同步监控** -- 实时显示 Master-Slave 同步状态、时钟偏移量、路径延迟、邻居速率比
-- **报文分析** -- 抓取并解析 PTP 报文（Sync、Follow_Up、Announce、PDelay、Signalling），逐字段展示
-- **日志统计** -- 运行日志记录、同步精度滑动窗口统计（均值 / 极值 / 标准差）
-- **中英双语界面** -- 支持中文和英文切换
+- **参数配置** —— 传输模式（IEEE 802.3 / UDP IPv4）、Profile（gPTP / PTPv2）、Domain 编号、Announce/Sync 发送周期
+- **同步监控** —— 实时显示 Master-Slave 同步状态、时钟偏移量、路径延迟、邻居速率比
+- **报文分析** —— 抓取并解析 PTP 报文（Sync、Follow_Up、Announce、PDelay、Signalling），逐字段展示
+- **日志统计** —— 运行日志记录、同步精度滑动窗口统计（均值 / 极值 / 标准差）
+- **中英双语界面** —— 支持中文和英文切换
 
 ## 架构
 
@@ -90,7 +92,7 @@ rtimeserver/
 ### 运行
 
 ```bash
-git clone https://github.com/jrtxio/rtimeserver.git
+git clone https://github.com/turinglambdaai/rtimeserver.git
 cd rtimeserver
 racket main.rkt
 ```
@@ -117,4 +119,4 @@ raco test tests/
 
 ## 许可证
 
-基于 [Apache License 2.0](LICENSE) 许可。
+基于 [Apache License 2.0](LICENSE) 开源。
